@@ -1,0 +1,254 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: sans-serif, monospace;
+}
+/*  						Header Part				*/
+/* ----navigation bar----- */
+nav{
+	width: 100%;
+	height: 40px;
+	background-image: linear-gradient(to right, rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.6));
+}
+
+
+#logo{
+	width: 40px;
+	height: 40px;
+}
+#nav-row{
+	height: 40px;
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#navbar{
+	display: inline-block;
+	font-family: arial;
+	font-size: 18px;
+}
+#navbar1{
+	display: inline-block;
+	font-family: monospace;
+	font-size: 25px;
+	cursor: pointer;
+	color: white;
+}
+#navbar:hover{
+	font-size: 18px;
+	height: 40px;
+	border-width: 0px 0px 3px 0px;
+	border-style: solid;
+	border-color: black;
+}
+
+#menu{
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+/* 							Section part 			*/
+
+.box-bg{
+	width: 100%;
+	height: 400px;
+	background-image: url(image/background.jpg);
+}
+.box-clr{
+	width: 100%;
+	height: 400px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-top: 50px;
+	padding-left: 30px;
+}
+#quote{
+	color: white;
+	font-size: 5rem;
+	font-family: monospace;
+}
+
+/* System required to install the operating system in our system. */
+
+.sys-require{
+	width: 100%;
+	height: 440px;
+}
+
+#sys-subhead{
+	font-size: 25px;
+	font-family: sans-serif;
+	padding: 5px;
+	
+}
+#sys-cnt{
+	font-family: sans-serif;
+	font-weight: normal;
+	padding: 2px;
+}
+.sys-box{
+	width: 95%;
+	height: 400px;
+	margin: 0px auto;
+	border-radius: 10px;
+	background-color: rgb(216, 220, 255);
+	margin-top: 20px;
+}
+
+
+#sys-pic{
+	height: 400px;
+	padding-left: 100px;
+}
+
+/* proficiency - It is use to indicate the how much amount of the languages are use in this project. */
+#profi{
+	width: 1260px;
+	height: 465px;
+	margin: 0px auto;
+}
+#profi-col1{
+	width: 660px;
+	height: 465px;
+}
+.col-1p{
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+.line-1{
+	width: 600px;
+	height: 15px;
+	background-color: #ddd;
+	border-radius: 20px;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+.line1-bar{
+	width: 0%;
+	height: 15px;
+	background-color: mediumpurple;
+	border-radius: 20px;
+	animation: load 8s infinite;
+}
+@keyframes load{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 90%;
+	}
+}
+.line-2{
+	width: 600px;
+	height: 15px;
+	background-color: #ddd;
+	border-radius: 20px;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+.line2-bar{
+	width: 0%;
+	height: 15px;
+	background-color: mediumpurple;
+	border-radius: 20px;
+	animation: load2 8s infinite;
+}
+@keyframes load2{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 60%;
+	}
+}
+.line-3{
+	width: 600px;
+	height: 15px;
+	background-color: #ddd;
+	border-radius: 20px;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+.line3-bar{
+	width: 0%;
+	height: 15px;
+	background-color: mediumpurple;
+	border-radius: 20px;
+	animation: load3 8s infinite;
+}
+@keyframes load3{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 50%;
+	}
+}	
+#profi-col2{
+	width: 600px;
+	height: 465px;
+}
+#profi-pic{
+	width: 600px;
+	height: 460px;
+}
+
+
+
+/* 							Footer part 			*/
+
+footer{
+	width: 100%;
+	height: 400px;
+	background-color: #293646;
+	padding-top: 40px;
+}
+
+#c-right{
+	width: 6%;
+	height: 20%;
+	margin-bottom: 10px;
+}
+
+#cy-logo{
+	color: white;
+	font-size: 40px;
+	padding-top: 40px;
+	padding-right: 20px;
+}
+#cy-matter{
+	color: white;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+/* scroll button - It is use to scroll up and down fastly.*/
+
+.scrollup{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	padding: 10px 15px;
+	background-color: #293646;
+	color: #fff;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
+}
+
+#arrow{
+	font-size: 25px;
+	padding-right: 10px;
+}
