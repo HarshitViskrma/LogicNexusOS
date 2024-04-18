@@ -107,6 +107,35 @@ nav{
 	padding-left: 100px;
 }
 
+/* This is the special feature section to describe the features of the operating system. */
+
+.sp-fer{
+	width: 100%;
+	height: 400px;
+}
+#sp-box{
+	width: 95%;
+	height: 400px;
+	margin: 0px auto;
+	border-radius: 10px;
+	background-color: rgb(237, 219, 195);
+	padding: 20px;
+}
+#sp-subhead{
+	font-size: 28px;
+	font-family: sans-serif;
+	padding: 10px;	
+}
+#sp-cnt{
+	font-family: sans-serif;
+	font-weight: normal;
+	padding: 8px;
+}
+#e-pic{
+	height: 350px;
+}
+
+
 /* proficiency - It is use to indicate the how much amount of the languages are use in this project. */
 .profiy{
 	width: 100%;
@@ -199,7 +228,7 @@ nav{
 	height: 465px;
 }
 #profi-pic{
-	height: 465px;
+	height: 445px;
 }
 
 
