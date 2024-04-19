@@ -78,7 +78,7 @@ nav{
 
 .sys-require{
 	width: 100%;
-	height: 440px;
+	height: 425px;
 }
 
 #sys-subhead{
@@ -98,7 +98,8 @@ nav{
 	margin: 0px auto;
 	border-radius: 10px;
 	background-color: rgb(216, 220, 255);
-	margin-top: 20px;
+	margin-top: 5px;
+	box-shadow: 1px 3px 10px #3c3c3c;
 }
 
 
@@ -120,6 +121,7 @@ nav{
 	border-radius: 10px;
 	background-color: rgb(237, 219, 195);
 	padding: 20px;
+	box-shadow: 1px 3px 10px #3c3c3c;
 }
 #sp-subhead{
 	font-size: 28px;
@@ -134,7 +136,25 @@ nav{
 #e-pic{
 	height: 350px;
 }
+#sca-box{
+	width: 95%;
+	height: 400px;
+	margin: 0px auto;
+	border-radius: 10px;
+	background-color: rgb(1, 136, 204);
+	padding: 20px;
+	box-shadow: 1px 3px 10px #3c3c3c;
+}
 
+#scr-box{
+	width: 95%;
+	height: 400px;
+	margin: 0px auto;
+	border-radius: 10px;
+	background-color: black;
+	padding: 20px;
+	box-shadow: 1px 3px 10px #616161;
+}
 
 /* proficiency - It is use to indicate the how much amount of the languages are use in this project. */
 .profiy{
