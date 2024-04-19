@@ -98,7 +98,7 @@ nav{
 	margin: 0px auto;
 	border-radius: 10px;
 	background-color: rgb(216, 220, 255);
-	margin-top: 15px;
+	margin-top: 20px;
 	box-shadow: 1px 3px 10px #3c3c3c;
 }
 
@@ -144,6 +144,7 @@ nav{
 	background-color: rgb(1, 136, 204);
 	padding: 20px;
 	box-shadow: 1px 3px 10px #3c3c3c;
+	margin-top: 20px;
 }
 
 
