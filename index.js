@@ -3,3 +3,11 @@
 function scrollup() {
 	window.scrollTo(0, 0);
 }
+
+
+// background theme color //
+
+function color(){
+	var body = document.getElementById("bg");
+	body.bgColor = "black";
+}
