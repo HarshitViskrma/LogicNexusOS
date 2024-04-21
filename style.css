@@ -74,6 +74,23 @@ nav{
 	font-family: monospace;
 }
 
+/* This is the introduction section to introduce the project objectives and many more things. */
+#intro-title{
+	color: white;
+	font-family: sans-serif;
+	font-weight: normal;
+	padding: 20px;
+	font-size: 40px;
+}
+
+#intro-cnt{
+	color: white;
+	font-family: sans-serif;
+	font-weight: normal;
+	padding: 20px;
+}
+
+
 /* System required to install the operating system in our system. */
 
 .sys-require{
