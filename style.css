@@ -99,7 +99,6 @@ nav{
 	border-radius: 10px;
 	background-color: rgb(216, 220, 255);
 	margin-top: 15px;
-	color: white;
 	box-shadow: 1px 3px 10px #3c3c3c;
 }
 
@@ -122,12 +121,13 @@ nav{
 	border-radius: 10px;
 	background-color: rgb(237, 219, 195);
 	padding: 20px;
-	color: white;
 	box-shadow: 1px 3px 10px #3c3c3c;
 }
 #sp-subhead{
-	font-size: 28px;
+	font-size: 30px;
 	font-family: sans-serif;
+	font-weight: normal;
+	color: black;
 	padding: 10px;	
 }
 #sp-cnt{
@@ -145,7 +145,6 @@ nav{
 	border-radius: 10px;
 	background-color: rgb(1, 136, 204);
 	padding: 10px;
-	color: white;
 	box-shadow: 1px 3px 10px #3c3c3c;
 }
 #protocal-box{
@@ -155,7 +154,16 @@ nav{
 	border-radius: 10px;
 	background-color: rgb(143, 188, 143);
 	padding: 20px;
-	color: white;
+	box-shadow: 1px 3px 10px #616161;
+}
+
+#hacking-box{
+	width: 95%;
+	height: 400px;
+	margin: 0px auto;
+	border-radius: 10px;
+	background-color: rgb(173, 180, 180);
+	padding: 20px;
 	box-shadow: 1px 3px 10px #616161;
 }
 
