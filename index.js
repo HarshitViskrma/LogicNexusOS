@@ -23,6 +23,6 @@ function SendMail(){
 		message  : document.getElementById("message").value
 	}
 	emailjs.send("service_wp0uil8", "template_om26i9y", params).then(function(res){
-		alert("Message send successfully! " + res.status);
+		alert("Message send successfully!");
 	})
 }
