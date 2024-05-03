@@ -442,14 +442,14 @@ footer{
 /* ---------------------------------------About-Us----------------------------*/
 .about-box{
 	width: 100%;
-	height: 240vh;
+	height: 230vh;
 	background: linear-gradient(135deg, #153677, rgb(129, 65, 65), black, rgb(9, 110, 92),  #4e085f);
 	display: flex;
 	align-items: center;
 }
 .about-container{
 	width: 90%;
-	height: 240vh;
+	height: 230vh;
 	margin: 0px auto;
 	padding: 20px;
 }
@@ -483,3 +483,7 @@ i{
 	font-size: 15px;
 	color: #ccc;
 }
+#team{
+	color: aquamarine;
+}
+
