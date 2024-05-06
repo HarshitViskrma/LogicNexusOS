@@ -53,6 +53,11 @@ nav{
 	font-size: 25px;
 	cursor: pointer;
 }
+#menu:hover{
+	font-size: 27px;
+	color: whitesmoke;
+	transition: 0.5s;
+}
 #menu:active{
 	transform: scale(0.96);
 	color: #ccc;
@@ -99,6 +104,11 @@ video{
 	text-shadow: 1px 1px 7px black;
 }
 .box-bg{
+	width: 100%;
+	height: 400px;
+	background-image: url(image/onto.gif);
+}
+.box-bgs{
 	width: 100%;
 	height: 400px;
 	background-image: url(image/background.jpg);
@@ -401,11 +411,13 @@ footer{
 	font-weight: none;
 	font-family: 'Poppins', sans-serif;
 }
+input:focus{
+	outline: none;
+}
 .review-line{
 	width: 70%;
 	height: 4vh;
-	border-radius: 5px;
-	
+	border-radius: 5px;	
 	padding: 15px;
 	margin: 10px;
 	color: black;
@@ -422,6 +434,7 @@ footer{
 	font-family: 'Poppins', sans-serif;
 	font-size: 20px;
 	border: none;
+	outline: none;
 }
 .submit-btn{
 	width: 90px;
