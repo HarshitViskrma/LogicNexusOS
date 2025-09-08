@@ -1,169 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>LogicNexusOS</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" type="text/css" href="image/logo.png">
-	<link rel="stylesheet" type="text/css" href="icon.css">
-	<link rel="stylesheet" type="text/css" href="logo.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
-</head>
-<body id="bg">
-<!-- upper section of the site -->
-	<header>
-		<nav>
-			<ul id="nav-row">
- 			 	<li id="navbar1">LogicNexusOS</li>
- 			 	<li id="navbar">	</li>
- 			 	<li id="navbar">	</li>
- 			 	<a href="index.html"><i class="fa-solid fa-house" id="menu"></i></a>
- 			 	<a href="contact.html"><i class="fa-solid fa-file-signature" id="menu"></i></a>
- 			 	<a href="about.html"><i class="fa-regular fa-address-card" id="menu"></i></a>
- 			 	<i class="fa-solid fa-circle-half-stroke" id="menu" onclick="color()"></i>
- 			 </ul>
-		</nav>
-	</header>
-<!-- All part of the site -->
-	<section>
-		<div class="anime-box">
-			<video autoplay muted loop src="image/anime.mp4" width="100%">
-				<source src="image/anime.mp4">
-				<source src="image/anime.WebM">
-				This browser does not support HTML5 audio.
-			</video>
-			<div class="anime-container">
-				<h1 id="headinges" align="center">LogicNexus<span id="os">OS</span></h1>
-				<p id="cntes" align="center">Transforming ones and zeros into boundless possibilities</p>
-			</div>
-			
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Logic Nexus: Linux operating system</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="text/css" href="image/logo.png" />
+    <link rel="stylesheet" type="text/css" href="icon.css" />
+    <link rel="stylesheet" type="text/css" href="logo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="bg">
+    <!-- upper section of the site -->
+    <header>
+      <nav class="navbar navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            >&nbsp;&nbsp;&nbsp;&nbsp;<img
+              src="image/images.png"
+              alt="brand icon"
+              class="logo"
+          /></a>
+          <a class="navbar-brand quote">Get started today with LogicNexus!</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                LogicNexus
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    ><i class="fa-solid fa-house"></i>&nbsp; Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    ><i class="fa-solid fa-server"></i>&nbsp; Services</a
+                  >
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="#product"
+                        ><i class="fa-solid fa-cog"></i>&nbsp;&nbsp;Actions</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#contact"
+                        ><i class="fa-solid fa-comments"></i
+                        >&nbsp;&nbsp;Customer feedback</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-solid fa-sync"></i>&nbsp;&nbsp;Regular
+                        updates</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    ><i class="fa-solid fa-layer-group"></i>&nbsp; Layers</a
+                  >
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="#require"
+                        ><i class="fa-solid fa-circle-exclamation"></i
+                        >&nbsp;&nbsp;Requirements</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#ethical"
+                        ><i class="fa-solid fa-comments"></i>&nbsp;&nbsp;Ethical
+                        Considerations</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#scalable"
+                        ><i class="fa-solid fa-square"></i
+                        >&nbsp;&nbsp;Modularity & Scalability</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#protocol"
+                        ><i class="fa-solid fa-shield"></i>&nbsp;&nbsp;Security
+                        Protocols</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact"
+                    ><i class="fa-solid fa-file-signature"></i>&nbsp; Contact
+                    us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about"
+                    ><i class="fa-solid fa-user"></i> &nbsp;About us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-download"></i>&nbsp; Download</a
+                  >
+                </li>
+                <li class="nav-item mt-5">
+                  <a class="nav-link" href="https://github.com/"
+                    ><i class="fa-brands fa-git-alt" id="icons"></i
+                    >&nbsp;&nbsp;&nbsp;&nbsp;<i
+                      class="fa-brands fa-reddit-alien"
+                      id="icons"
+                    ></i
+                    >&nbsp;&nbsp;&nbsp;&nbsp;<i
+                      class="fa-brands fa-linux"
+                      id="icons"
+                    ></i
+                    >&nbsp;&nbsp;&nbsp;&nbsp;<i
+                      class="fa-brands fa-github"
+                      id="icons"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-			</div>
-		</div>
+    <!-- All part of the site -->
 
-		
+    <section>
+      <!-- This is the anime section to make the site more attractive. -->
+      <div class="anime-box position-relative">
+        <video
+          autoplay
+          muted
+          loop
+          src="image/anime.mp4"
+          class="position-absolute object-fit-cover"
+          width="100%"
+        >
+          <source src="image/anime.mp4" />
+          <source src="image/anime.WebM" />
+          This browser does not support HTML5 audio.
+        </video>
+        <div class="anime-container position-relative mx-5 text-light">
+          <button
+            class="btn btn-outline-light btn-lg"
+            type="button"
+            onclick="alert('explore our all new features.')"
+          >
+            Explore
+          </button>
+          <h1 id="headinges">Logic <span id="os">Nexus</span></h1>
+        </div>
+      </div>
 
-		<!-- This is the introduction section to introduce the project objectives and many more things. -->
+      <!-- This is the introduction section to introduce the project objectives and many more things. -->
+      <div class="documentation" id="about">
+        <h6>Transforming ones and zeros into boundless possibilities</h5>
+        <p>Logic Nexus OS (Operating System) emerges as a paradigm-shifting operating system meticulously tailored to meet the multifaceted demands of IT professionals, ethical hackers, and practitioners entrenched in the domains of Machine Learning (ML), Artificial Intelligence (AI), and Data Science. This pioneering OS embodies a culmination of state-of-the-art technological innovations fused with a robust architecture, poised to redefine efficiency, security, and adaptability in contemporary computing landscapes.Logic Nexus OS (Operating System) embodies a synthesis of cutting-edge technologies and robust design principles, poised to revolutionize the paradigm of operating systems for IT professionals, ethical hackers, and practitioners in ML, AI, and Data Science. With its unwavering commitment to excellence and continuous refinement, Logic Nexus OS stands as a testament to innovation, poised to drive transformative advancements across the spectrum of computing and technology.</p>
+        <p>At its core, Logic Nexus OS is engineered to deliver unparalleled performance and reliability, seamlessly integrating a comprehensive suite of tools and utilities tailored to the unique needs of its target audience. From advanced networking capabilities to sophisticated security protocols, this OS is meticulously crafted to empower users with the resources necessary to navigate complex digital landscapes with confidence and precision. Whether orchestrating intricate algorithms, conducting penetration tests, or managing vast datasets, Logic Nexus OS provides a cohesive ecosystem that fosters productivity and innovation.</p>
+        <p>Moreover, Logic Nexus OS is distinguished by its unwavering commitment to security and ethical considerations, recognizing the paramount importance of safeguarding sensitive information and upholding the principles of responsible computing. Through the implementation of robust encryption mechanisms, multi-layered authentication protocols, and proactive threat detection systems, this OS establishes a formidable defense against cyber threats, ensuring the integrity and confidentiality of user data. Additionally, Logic Nexus OS adheres to stringent ethical guidelines, promoting transparency, accountability, and responsible usage within its user community.</p>
+        <p>In essence, Logic Nexus OS represents a transformative leap forward in the realm of operating systems, embodying a harmonious blend of innovation, security, and ethical stewardship. As the digital landscape continues to evolve at an unprecedented pace, Logic Nexus OS stands poised to empower IT professionals, ethical hackers, and practitioners in ML, AI, and Data Science with the tools and capabilities necessary to thrive in an increasingly complex and interconnected world.</p>
+      </div>
 
-		<div class="box-bgs">
-			<div class="box-clr">
-				<h1 id="intro-title">INTRODUCTION</h1>
-				<h3 id="intro-cnt">Logic Nexus OS (LNOS) emerges as a paradigm-shifting operating system meticulously tailored to meet the multifaceted demands of IT professionals, ethical hackers, and practitioners entrenched in the domains of Machine Learning (ML), Artificial Intelligence (AI), and Data Science. This pioneering OS embodies a culmination of state-of-the-art technological innovations fused with a robust architecture, poised to redefine efficiency, security, and adaptability in contemporary computing landscapes.<br>
-				In summation, Logic Nexus OS (LNOS) embodies a synthesis of cutting-edge technologies and robust design principles, poised to revolutionize the paradigm of operating systems for IT professionals, ethical hackers, and practitioners in ML, AI, and Data Science. With its unwavering commitment to excellence and continuous refinement, LNOS stands as a testament to innovation, poised to drive transformative advancements across the spectrum of computing and technology.</h3>
-			</div>
-		</div>
+      <!-- System required to install the operating system in our system. -->
+      <div class="sys-require" id="require">
+        <div class="sys-box">
+          <div id="req-box1">
+            <img src="image/sys-required.jpg" id="sys-pic" />
+          </div>
+          <div id="req-box">
+            <h3 id="sys-subhead">Minimum Requirements</h3>
+            <h3 id="sys-cnt">✔ intel dual-core processor/ amd ryzen</h3>
+            <h3 id="sys-cnt">✔ RAM : 1 GB</h3>
+            <h3 id="sys-cnt">✔ Storage : 12 GB</h3>
+            <h3 id="sys-cnt">✔ Internet Connection</h3>
+            <h3 id="sys-cnt">✔ No graphic-cards are required</h3>
+          </div>
+          <div id="req-box">
+            <h3 id="sys-subhead">Recommended Requirements</h3>
+            <h3 id="sys-cnt">✔ i3 4th Gen/ amd ryzen 3</h3>
+            <h3 id="sys-cnt">✔ RAM : 4 GB</h3>
+            <h3 id="sys-cnt">✔ Storage : 18 GB</h3>
+            <h3 id="sys-cnt">✔ Internet Connection</h3>
+            <h3 id="sys-cnt">✔ No graphic-cards are required</h3>
+          </div>
+        </div>
+      </div>
 
-		
- 		<!-- System required to install the operating system in our system. -->
+      <!-- This is the special feature section to describe the features of the operating system -->
 
- 		<div class="sys-require">
- 			<table class="sys-box">
- 				<tr>
- 					<td>
- 						<img src="image/sys-required.jpg" id="sys-pic">
- 					</td>
- 					<td>
- 						<h2 id="sys-subhead">Minimum Requirements :</h2>
- 						<h3 id="sys-cnt">✔ intel dual-core processor/ Ryzen</h3>
- 						<h3 id="sys-cnt">✔ RAM : 1 GB</h3>
-						<h3 id="sys-cnt">✔ Storage : 12 GB</h3>
- 						<h3 id="sys-cnt">✔ Internet Connection</h3>
- 						<h3 id="sys-cnt">✔ No graphic-cards are required</h3><br>
+      <div class="sys-require" id="product">
+ 			<div class="sys-box product-bg">
+ 					<div class="contain">
+ 						<h2 id="sys-subheads">Seamless Integration for Enhanced Productivity</h2>
+ 						<h3 id="sys-cnts">Logic Nexus distinguishes itself through its seamless integration of a comprehensive suite of tools indispensable for IT professionals and ethical hackers alike. Its intuitive user interface facilitates fluid navigation and utilization of tools, fostering streamlined workflows and heightened productivity. Whether orchestrating network analyses, conducting penetration tests, or orchestrating intricate algorithms, Logic Nexus empowers users with a cohesive ecosystem conducive to optimal performance.</h3>
+ 					</div>
+ 					<div class="conatin-img">
+ 						<img src="image/productivitys.jpg" id="product-pic">
+ 					</div>
+ 			</div>
+ 		</div>
+		 
+      <div class="sys-require" id="scalable">
+ 			<div class="sys-box scalable-bg">		
+ 					<div class="contain-img">
+ 						<img src="image/scalabilitys.jpg" id="scalable-pic">
+ 					</div>
+ 					<div class="contain">
+ 						<h2 id="sys-subheads">Modularity and Scalability</h2>
 
- 						<h2 id="sys-subhead">Recommended Requirements :</h2>
- 						<h3 id="sys-cnt">✔ i3 4th Gen/ Ryzen 3</h3>
- 						<h3 id="sys-cnt">✔ RAM : 4 GB</h3>
-						 <h3 id="sys-cnt">✔ Storage : 18 GB</h3>
- 						<h3 id="sys-cnt">✔ Internet Connection</h3>
- 						<h3 id="sys-cnt">✔ No graphic-cards are required</h3>
- 					</td>
- 				</tr>
- 			</table>
+ 						<h3 id="sys-cnts">Logic Nexus embraces a modular architecture, affording users the flexibility to tailor their computing environments to suit specific requirements. Whether deployed on individual workstations or scaled across enterprise-grade server clusters, Logic Nexus ensures seamless interoperability and scalability, accommodating diverse use cases and workloads with unparalleled agility. Through its extensible framework and open architecture, Logic Nexus empowers users to adapt and innovate in response to evolving technological landscapes.</h3>
+ 					</div>
+ 			</div>
  		</div>
 
-		<!-- This is the special feature section to describe the features of the operating system -->
+      <div class="sys-require" id="protocol">
+ 			<div class="sys-box protocol-bg">
+ 					<div class="contain">
+ 						<h2 id="sys-subheads">Fortified Security Protocols</h2>
 
- 		<div class="sp-fer">
- 			<table id="sp-box">
- 				<tr>
- 					<td>
- 						<h2 id="sp-subhead">Seamless Integration for Enhanced Productivity :</h2>
-
- 						<h3 id="sp-cnt">LNOS distinguishes itself through its seamless integration of a comprehensive suite of tools indispensable for IT professionals and ethical hackers alike. Its intuitive user interface facilitates fluid navigation and utilization of tools, fostering streamlined workflows and heightened productivity. Whether orchestrating network analyses, conducting penetration tests, or orchestrating intricate algorithms, LNOS empowers users with a cohesive ecosystem conducive to optimal performance.</h3>
- 					</td>
- 					<td>
- 						<img src="image/productivitys.jpg" id="e-pic">
- 					</td>
+ 						<h3 id="sys-cnts">In recognition of the paramount importance of cybersecurity, Logic Nexus encompasses a robust array of security features meticulously engineered to fortify digital infrastructures against evolving threats. Leveraging encrypted communication protocols, advanced firewalls, and intrusion detection systems, Logic Nexus erects a formidable defense mechanism, safeguarding critical data assets and preserving system integrity. By prioritizing security without compromising usability, Logic Nexus ensures a resilient shield against cyber intrusions.</h3>
+ 					</div>
+ 					<div class="conatin-img">
+ 						<img src="image/sec-protocal.png" id="protocol-pic">
+ 					</div>
  				</tr>
- 			</table>
- 		</div>
-		
- 		<div class="sp-fer">
- 			<table id="sca-box">
- 				<tr>
- 					<td>
- 						<img src="image/scalabilitys.jpg" id="e-pic">
- 					</td>
- 					<td>
- 						<h2 id="sp-subhead">Modularity and Scalability :</h2>
-
- 						<h3 id="sp-cnt">LNOS embraces a modular architecture, affording users the flexibility to tailor their computing environments to suit specific requirements. Whether deployed on individual workstations or scaled across enterprise-grade server clusters, LNOS ensures seamless interoperability and scalability, accommodating diverse use cases and workloads with unparalleled agility. Through its extensible framework and open architecture, LNOS empowers users to adapt and innovate in response to evolving technological landscapes.</h3>
- 					</td>
- 				</tr>
- 			</table>
+ 			</div>
  		</div>
 
-		<div class="sp-fer">
- 			<table id="protocal-box">
- 				<tr>
- 					<td>
- 						<h2 id="sp-subhead">Fortified Security Protocols :</h2>
-
- 						<h3 id="sp-cnt">In recognition of the paramount importance of cybersecurity, LNOS encompasses a robust array of security features meticulously engineered to fortify digital infrastructures against evolving threats. Leveraging encrypted communication protocols, advanced firewalls, and intrusion detection systems, LNOS erects a formidable defense mechanism, safeguarding critical data assets and preserving system integrity. By prioritizing security without compromising usability, LNOS ensures a resilient shield against cyber intrusions.</h3>
- 					</td>
- 					<td>
- 						<img src="image/sec-protocal.png" id="e-pic">
- 					</td>
- 				</tr>
- 			</table>
- 		</div>
-
-		<div class="sp-fer">
- 			<table id="hacking-box">
- 				<tr>
- 					<td>
+      <div class="sys-require" id="ethical">
+ 			<div class="sys-box hack-bg">
+ 					<div class="contain-img">
  						<img src="image/e-hacking.png" id="e-pic">
- 					</td>
- 					<td>
- 						<h2 id="sp-subhead">Catering to Ethical Hacking :</h2>
+ 					</div>
+ 					<div class="contain">
+ 						<h2 id="sys-subheads">Catering to Ethical Hacking</h2>
 
- 						<h3 id="sp-cnt">LNOS stands as an indispensable ally for ethical hackers, offering a comprehensive toolkit replete with utilities tailored to exploit vulnerabilities, conduct penetration testing, and fortify system defenses. Through a sophisticated framework designed to emulate real-world scenarios, LNOS empowers ethical hackers to identify and rectify security loopholes, thereby fortifying digital infrastructures against potential breaches. With its emphasis on ethical practices and responsible hacking methodologies, LNOS serves as a cornerstone for bolstering cybersecurity resilience.</h3>
- 					</td>
- 				</tr>
- 			</table>
+ 						<h3 id="sys-cnts">Logic Nexus stands as an indispensable ally for ethical hackers, offering a comprehensive toolkit replete with utilities tailored to exploit vulnerabilities, conduct penetration testing, and fortify system defenses. Through a sophisticated framework designed to emulate real-world scenarios, Logic Nexus empowers ethical hackers to identify and rectify security loopholes, thereby fortifying digital infrastructures against potential breaches. With its emphasis on ethical practices and responsible hacking methodologies, Logic Nexus serves as a cornerstone for bolstering cybersecurity resilience.</h3>
+ 					</div>
+ 			</div>
  		</div>
-		
-		<!-- Proficiency - It is use to indicate the how much amount of the languages are use in this project.-->
 
- 		
+      <!-- Portable, Reliable, Customizable -->
+      <div class="box-bg">
+        <div class="box-clr">
+          <h1 id="quote">Portable</h1>
+          <h1 id="quote">Reliable</h1>
+          <h1 id="quote">Customizable...</h1>
+        </div>
+      </div>
 
-		
-	</section>
- <!-- At the end of the site -->
-	<footer align="center">
-		<img src="image/logo.png" id="c-right">
-		<h3 id="cy-matter"><i class="fa-regular fa-copyright"></i> 2024 - 2025 The LogicNexusOS Project</h3>
-		<h3 id="cy-matter">Note: LogicNexusOS is not a 501(c)(3) non-profit, as such donations are not tax-exempt.</h3>
-		<h3 id="cy-matter">Contact Us: +91 935XXXXX62, +91 637XXXXX21</h3>
-		<h3 id="cy-matter">Feedback email: support.logicnexus.co.in</h3>
-		<h3 id="cy-matter"><i class="fa-brands fa-github" id="cy-logo"></i><i class="fa-brands fa-git-alt" id="cy-logo"></i><i class="fa-brands fa-reddit-alien" id="cy-logo"></i><i class="fa-brands fa-linux" id="cy-logo"></i></h3>
-	</footer>
+      <!-- This is the enquiry section to contact us. -->
 
-	<!-- scroll btn - It is use to scroll up and down fastly.-->
+      <div class="flex-container enq-form" id="contact">
+        <div class="box cols-6">
+          <h2 class="head">Have An Ideas In Mind?</h2>
+          <p class="subhead">Let's Talk!</p>
+          <p class="cnt">
+            Bring your vision to the table, and we'll engineer the details. At
+            LogicNexusOS, we value your input and are committed to turning your
+            ideas into reality.
+          </p>
+          <p class="cnt">
+            As your comprehensive partner, we are here to listen, collaborate,
+            and innovate together. Ready to take the next step? Our experts are
+            ready to make it happen!
+          </p>
+          <button class="about-btn">About Us</button>
+        </div>
+        <div class="box cols-6">
+          <input
+            type="text"
+            name="name"
+            id="io"
+            placeholder="Enter your full name *"
+          /><br />
+          <input
+            type="number"
+            name="number"
+            id="io"
+            placeholder="Your contact number *"
+          /><br />
+          <input
+            type="email"
+            name="email"
+            id="io"
+            placeholder="Valid email id *"
+          /><br />
+          <input
+            type="text"
+            name="location"
+            id="io"
+            placeholder="Current location *"
+          /><br />
+          <input
+            type="text"
+            name="message"
+            id="io"
+            placeholder="Brief message *"
+          /><br />
+          <button class="about-btn">Submit</button>
+        </div>
+      </div>
+    </section>
+    <!-- At the end of the site -->
+    <footer>
+      <div class="icon-box">
+        <i class="fa-brands fa-github text-dark px-2" id="cy-logo"></i>
+        <i class="fa-brands fa-git-alt text-dark px-2" id="cy-logo"></i>
+        <i class="fa-brands fa-linux text-dark px-2" id="cy-logo"></i>
+      </div>
+      <div class="footer-info">
+        <div class="footer-logo">
+          <img src="image/logo.png" id="c-right" />&nbsp;&nbsp;&nbsp;&nbsp;<a
+            class="text-decoration-none"
+            id="cy-matter"
+            href="index.html"
+            ><b>Logic</b>Nexus</a
+          >
+          <h3 id="cy-matter">
+            <i class="fa-regular fa-copyright mt-5 cright"></i> 2024 - 2025 The
+            LogicNexusOS Project
+          </h3>
+          <h3 id="cy-matter">
+            Note: LogicNexusOS is not a 501(c)(3) non-profit, as such donations
+            are not tax-exempt.
+          </h3>
+          <h3 id="cy-matter">
+            Get started today - absolutely no obligations and completely free!
+          </h3>
+          <br />
+          <span class="footer-btn">Let's Get Started</span>
+        </div>
+        <div class="footer-contact">
+          <h3 id="cy-matter"><b>Specifications</b></h3>
+          <br />
+          <h3 id="cy-matter">Minimum requirements</h3>
+          <h3 id="cy-matter">Maximum requirements</h3>
+          <h3 id="cy-matter">Security protocols</h3>
+          <h3 id="cy-matter">Ethical considerations</h3>
+          <h3 id="cy-matter">Modularity & Scalability</h3>
+        </div>
+        <div class="footer-feedback">
+          <h3 id="cy-matter"><b>Services</b></h3>
+          <br />
+          <h3 id="cy-matter">Actions</h3>
+          <h3 id="cy-matter">Customer feedback</h3>
+          <h3 id="cy-matter">Regular updates</h3>
+        </div>
+      </div>
+    </footer>
 
- 	<div onclick="scrollup()" class="scrollup"><i class="fa-solid fa-hand-pointer" id="arrow"></i></div>
- 	<script type="text/javascript" src="index.js"></script>
-</body>
+    <!-- scroll btn - It is use to scroll up and down fast-->
+
+    <div onclick="scroll()" class="scrollup">
+      <i class="fa-solid fa-hand-pointer" id="arrow"></i>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,6 +1,6 @@
 // scroll btn - It is use to scroll up and down.//
 
-function scrollup() {
+function scroll() {
 	window.scrollTo(0, 0);
 }
 
@@ -26,3 +26,4 @@ function SendMail(){
 		alert("Message send successfully!");
 	})
 }
+

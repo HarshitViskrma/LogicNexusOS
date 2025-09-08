@@ -1,551 +1,688 @@
 @charset "utf-8";
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-}
-body{
-	font-family: sans-serif, monospace;
-}
-/*  						Header Part				*/
-/* ----navigation bar----- */
-nav{
-	width: 100%;
-	height: 45px;
-	background-image: linear-gradient(135deg,  rgba(41, 54, 70, 0.6), rgba(41, 54, 70, 0.7), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.8), rgba(41, 54, 70, 0.7), rgba(41, 54, 70, 0.6));
-	animation: navColor 5s infinite;
-}
-@keyframes navColor{
-	0%{
-		background-image: linear-gradient(135deg,  rgba(41, 54, 70, 0.6), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.6));
-	}
-	25%{
-		background-image: linear-gradient(135deg,  rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.6), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.9));
-	}
-	50%{
-		background-image: linear-gradient(135deg,  rgba(41, 54, 70, 0.6), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.6));
-	}
-	75%{
-		background-image: linear-gradient(135deg,  rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.6), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.9));
-	}
-	100%{
-		background-image: linear-gradient(135deg,  rgba(41, 54, 70, 0.6), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.99), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.9), rgba(41, 54, 70, 0.6));
-	}
+body {
+  font-family: "Baloo 2", cursive;
+  padding-top: 4rem;
 }
 
-
-#logo{
-	width: 40px;
-	height: 40px;
+/* navbar */
+#icons {
+  font-size: 1.5rem;
 }
-#nav-row{
-	height: 40px;
-	list-style: none;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
 }
-#navbar{
-	display: inline-block;
-	font-family: arial;
-	font-size: 18px;
-}
-#navbar1{
-	display: inline-block;
-	font-family: monospace;
-	font-size: 30px;
-	cursor: pointer;
-	color: white;
-}
-#navbar:hover{
-	font-size: 18px;
-	height: 40px;
-	border-width: 0px 0px 3px 0px;
-	border-style: solid;
-	border-color: black;
-}
-
-#menu{
-	color: white;
-	font-size: 25px;
-	cursor: pointer;
-}
-#menu:hover{
-	font-size: 27px;
-	color: whitesmoke;
-	transition: 0.5s;
-}
-#menu:active{
-	transform: scale(0.96);
-	color: #ccc;
+@media (max-width: 576px) {
+  .quote {
+    display: none;
+  }
 }
 
 /* 							Section part 			*/
+.anime-box {
+  width: 100%;
+  height: 85vh;
+}
+video {
+  width: 100%;
+  height: 85vh;
+}
+.anime-container {
+  bottom: -24rem;
+  padding-left: 1rem;
+}
+#os {
+  color: #153677;
+  animation: change 5s infinite;
+}
+@keyframes change {
+  0% {
+    color: rgba(21, 54, 119, 0.9);
+  }
+  20% {
+    color: rgb(0, 255, 255);
+  }
+  40% {
+    color: rgb(95, 158, 160);
+  }
+  60% {
+    color: rgb(8, 143, 143);
+  }
+  80% {
+    color: rgb(0, 163, 108);
+  }
+  100% {
+    color: rgba(21, 54, 119, 0.9);
+  }
+}
+#headinges {
+  font-size: 6rem;
+  text-shadow: 1px 1px 7px black;
+}
+#cntes {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 7px black;
+  color: white;
+}
 
-.anime-box{
-	width: 100%;
-	height: 578px;
+/* Mobile style */
+@media (max-width: 425px) {
+  #headinges {
+    font-size: 1.9rem;
+  }
+  #cntes {
+    font-size: 0.9rem;
+  }
+  .anime-box {
+    height: 50vh;
+  }
+  video {
+    width: 100%;
+    height: 50vh;
+  }
+  .quote {
+    font-size: 0.8rem;
+  }
+  .btn {
+    display: none !important;
+  }
+  .anime-container {
+    bottom: -15rem;
+    padding-left: 0;
+  }
+  .anime-line {
+    display: none;
+  }
 }
-video{
-	position: absolute;
+
+#ctn {
+  color: white;
+  font-size: 17px;
+  font-weight: normal;
+  padding-top: 10px;
+  text-shadow: 1px 1px 7px black;
 }
-.anime-container{
-	width: 100%;
-	height: 578px;
-	position: relative;
-	padding-top: 310px;
+
+/* Documentation: */
+.documentation {
+  width: 100%;
+  height: 90vh;
+  background-color: black;
+  padding: 2rem 4rem 0 4rem;
+  color: whitesmoke;
 }
-#os{
-	color: #153677;
-	animation: change 5s infinite;
+@media (max-width: 425px) {
+  .documentation {
+    height: auto;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-size: 0.8rem;
+  }
 }
-@keyframes change{
-	0%{
-		color: rgb(125, 249, 255);
-	}
-	20%{
-		color: rgb(0, 255, 255);
-	}
-	40%{
-		color: rgb(95, 158, 160);
-	}
-	60%{
-		color: rgb(8, 143, 143);
-	}
-	80%{
-		color: rgb(0, 163, 108);
-	}
-	100%{
-		color: rgba(21, 54, 119, 0.9);
-	}
+
+/* Portable, Reliable, Customizable */
+.box-bg {
+  width: 100%;
+  height: 60vh;
+  background-image: url(image/onto.gif);
+  background-size: contain;
 }
-#headinges{
-	color: white;
-	font-family: 'Poppins', sans-serif;
-	font-size: 70px;
-	padding: 20px;
-	text-shadow: 1px 1px 7px black;
+.box-clr {
+  width: 100%;
+  height: 30vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
 }
-#cntes{
-	color: #ccc;
-	font-size: 30px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: normal;
-	text-shadow: 1px 1px 7px black;
+#quote {
+  color: white;
+  font-size: 5rem;
 }
-#ctn{
-	color: white;
-	font-size: 17px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: normal;
-	padding-top: 10px;
-	text-shadow: 1px 1px 7px black;
-}
-.box-bg{
-	width: 100%;
-	height: 400px;
-	background-image: url(image/onto.gif);
-}
-.box-bgs{
-	width: 100%;
-	height: 400px;
-	background-image: url(image/background.jpg);
-}
-.box-clr{
-	width: 100%;
-	height: 400px;
-	background-color: rgba(0, 0, 0, 0.6);
-	padding-top: 50px;
-	padding-left: 30px;
-}
-#quote{
-	color: white;
-	font-size: 5rem;
-	font-family: monospace;
+@media (max-width: 425px) {
+  .box-bg {
+    width: auto;
+    height: auto;
+  }
+  .box-clr {
+    width: auto;
+    height: auto;
+    padding: 2rem;
+  }
+  #quote {
+    font-size: 2rem;
+  }
 }
 
 /* This is the introduction section to introduce the project objectives and many more things. */
-#intro-title{
-	color: white;
-	font-family: sans-serif;
-	font-weight: normal;
-	padding: 20px;
-	font-size: 50px;
+#intro-title {
+  color: white;
+  font-weight: normal;
+  padding: 20px;
+  font-size: 50px;
 }
 
-#intro-cnt{
-	color: white;
-	font-family: sans-serif;
-	font-weight: normal;
-	padding: 20px;
+#intro-cnt {
+  color: white;
+  font-weight: normal;
+  padding: 20px;
 }
-
 
 /* System required to install the operating system in our system. */
 
-.sys-require{
-	width: 100%;
-	height: 425px;
+.sys-require {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.sys-box {
+  width: 96%;
+  height: 50vh;
+  border-radius: 10px;
+  background-color: rgb(216, 220, 255);
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: inset 1px 3px 10px black;
+}
+#req-box {
+  width: 30%;
+  padding: 2rem;
+}
+#req-box1 {
+  width: 30%;
+  padding: 2rem;
 }
 
-#sys-subhead{
-	font-size: 25px;
-	font-family: sans-serif;
-	padding: 5px;
-	font-weight: normal;
-	
+#sys-subhead {
+  font-size: 1.2rem;
+  padding: 0 5px 5px 5px;
+  font-weight: bold;
+  color: #293646;
 }
-#sys-cnt{
-	font-family: sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	padding: 2px;
+#sys-cnt {
+  font-size: 1.1rem;
+  padding: 0 1px 0 1px;
+  color: #293646;
 }
-.sys-box{
-	width: 95%;
-	height: 400px;
-	margin: 0px auto;
-	border-radius: 10px;
-	background-color: rgb(216, 220, 255);
-	margin-top: 15px;
-	box-shadow: 1px 3px 10px #3c3c3c;
+
+#sys-pic {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 425px) {
+  .sys-require {
+    height: auto;
+  }
+  #sys-subhead {
+    font-size: 0.8rem;
+    padding-left: 3rem;
+  }
+  #sys-cnt {
+    font-size: 0.7rem;
+    padding-left: 3rem;
+  }
+  #sys-pic {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 2rem;
+  }
+  .sys-box {
+    width: 80%;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #req-box {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 1rem;
+  }
+  #req-box1 {
+    width: 100%;
+    height: 20vh;
+    padding: 0px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
-#sys-pic{
-	height: 400px;
-	padding-left: 100px;
+/* all container box */
+
+.contain-img {
+  width: 40%;
+  height: auto;
+}
+.contain {
+  width: 60%;
+  height: auto;
+  text-align: center;
+  padding: 3.5rem;
+}
+#sys-subheads {
+  font-size: 1.2rem;
+  padding: 0 5px 5px 5px;
+  font-weight: bold;
+  color: #293646;
+}
+#sys-cnts {
+  font-size: 1.1rem;
+  padding: 0 1px 0 1px;
+  color: #293646;
+}
+#e-pic {
+  width: 60%;
+  height: 90%;
+  margin-left: 4rem;
+}
+.scalable-bg {
+  background-color: rgb(1, 136, 204);
+  color: white;
+}
+#scalable-pic {
+  width: 90%;
+  height: 80%;
+  margin: 1rem;
+}
+#protocol-pic {
+  width: 75%;
+  height: 75%;
+  margin: 1rem;
+}
+.product-bg {
+  background-color: rgb(237, 219, 195);
+}
+.protocol-bg {
+  background-color: rgb(143, 188, 143);
+}
+.hack-bg {
+  background-color: rgb(224, 225, 225);
+}
+#product-pic {
+  width: 80%;
+  height: 80%;
+  margin: 1.5rem;
 }
 
-/* This is the special feature section to describe the features of the operating system. */
-
-.sp-fer{
-	width: 100%;
-	height: 415px;
-}
-#sp-box{
-	width: 95%;
-	height: 400px;
-	margin: 0px auto;
-	border-radius: 10px;
-	background-color: rgb(237, 219, 195);
-	padding: 20px;
-	box-shadow: 1px 3px 10px #3c3c3c;
-}
-#sp-subhead{
-	font-size: 30px;
-	font-family: sans-serif;
-	font-weight: normal;
-	color: black;
-	padding: 10px;	
-}
-#sp-cnt{
-	font-family: sans-serif;
-	font-weight: normal;
-	padding: 8px;
-}
-#e-pic{
-	height: 350px;
-}
-#sca-box{
-	width: 95%;
-	height: 400px;
-	margin: 0px auto;
-	border-radius: 10px;
-	background-color: rgb(1, 136, 204);
-	padding: 10px;
-	box-shadow: 1px 3px 10px #3c3c3c;
-}
-#protocal-box{
-	width: 95%;
-	height: 400px;
-	margin: 0px auto;
-	border-radius: 10px;
-	background-color: rgb(143, 188, 143);
-	padding: 20px;
-	box-shadow: 1px 3px 10px #616161;
+@media (max-width: 425px) {
+  .contain-img {
+    width: 100%;
+    height: auto;
+  }
+  .contain {
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+  }
+  #sys-subheads {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+  #sys-cnts {
+    font-size: 0.7rem;
+  }
+  #e-pic {
+    width: 60%;
+    height: 90%;
+    margin-left: 4rem;
+  }
+  #scalable-pic {
+    width: 90%;
+    height: 80%;
+    margin: 1rem;
+  }
+  #protocol-pic {
+    width: 75%;
+    height: 75%;
+    margin: 2rem;
+  }
+  #product-pic {
+    width: 70%;
+    height: 70%;
+    margin: 2rem;
+  }
 }
 
-#hacking-box{
-	width: 95%;
-	height: 400px;
-	margin: 0px auto;
-	border-radius: 10px;
-	background-color: rgb(224, 225, 225);
-	padding: 20px;
-	box-shadow: 1px 3px 10px #616161;
+/*       Feedback form            */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.enq-form {
+  width: 100%;
+  height: 70vh;
+  background-color: #293646;
+  color: white;
+}
+.box {
+  width: 50%;
+  height: auto;
+  padding: 1rem 5rem 1rem 5rem;
+}
+.subhead {
+  font-size: 1.2rem;
+}
+#io {
+  background-color: transparent;
+  margin-bottom: 1rem;
+}
+input {
+  width: 100%;
+  height: 6vh;
+  border: 0px;
+  border-bottom: 3px solid white;
+  color: white;
+}
+::placeholder {
+  color: whitesmoke;
+  opacity: 1; /* Firefox */
 }
 
-/* proficiency - It is use to indicate the how much amount of the languages are use in this project. */
-#profiys-box{
-	width: 95%;
-	height: 400px;
-	margin: 0px auto;
-	border-radius: 10px;
-	background-color: rgb(245, 255, 250);
-	padding: 20px;
-	box-shadow: 1px 3px 10px #616161;
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: red;
+}
+input:focus {
+  outline: none;
+}
+.about-btn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  border: none;
+  font-weight: 450;
+  background-color: orange;
 }
 
-.line-1{
-	width: 500px;
-	height: 15px;
-	background-color: #ddd;
-	border-radius: 20px;
-	margin-bottom: 25px;
-	margin-top: 20px;
+@media (max-width: 425px) {
+  .enq-form {
+    height: auto;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .subhead {
+    font-size: 0.7rem;
+  }
+  .cnt {
+    font-size: 0.6rem;
+  }
+  .head {
+    font-size: 1rem;
+  }
+  .about-btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.7rem;
+  }
+  input {
+    width: 90%;
+    height: auto;
+    border-bottom: 1.5px solid white;
+  }
+  #io {
+    font-size: 0.7rem;
+  }
 }
-.line1-bar{
-	width: 0%;
-	height: 15px;
-	background-color: mediumpurple;
-	border-radius: 20px;
-	animation: load 8s infinite;
-}
-@keyframes load{
-	0%{
-		width: 0%;
-	}
-	100%{
-		width: 90%;
-	}
-}
-.line-2{
-	width: 500px;
-	height: 15px;
-	background-color: #ddd;
-	border-radius: 20px;
-	margin-bottom: 25px;
-	margin-top: 20px;
-}
-.line2-bar{
-	width: 0%;
-	height: 15px;
-	background-color: mediumpurple;
-	border-radius: 20px;
-	animation: load2 8s infinite;
-}
-@keyframes load2{
-	0%{
-		width: 0%;
-	}
-	100%{
-		width: 60%;
-	}
-}
-.line-3{
-	width: 500px;
-	height: 15px;
-	background-color: #ddd;
-	border-radius: 20px;
-	margin-bottom: 25px;
-	margin-top: 20px;
-}
-.line3-bar{
-	width: 0%;
-	height: 15px;
-	background-color: mediumpurple;
-	border-radius: 20px;
-	animation: load3 8s infinite;
-}
-@keyframes load3{
-	0%{
-		width: 0%;
-	}
-	100%{
-		width: 50%;
-	}
-}	
-
-
-
-
 /* 							Footer part 			*/
 
-footer{
-	width: 100%;
-	height: 400px;
-	background-color: #293646;
-	padding-top: 40px;
+footer {
+  width: 100%;
+  height: 90vh;
+  background-color: #293646;
 }
 
-#c-right{
-	width: 6%;
-	height: 20%;
-	margin-bottom: 10px;
+.icon-box {
+  width: 6%;
+  height: 22vh;
+  background-color: orange;
+  float: right;
+  margin-top: 1rem;
+  text-align: center;
+}
+.footer-info {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+.footer-logo {
+  width: 50%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.footer-contact {
+  width: 25%;
+}
+.footer-feedback {
+  width: 25%;
 }
 
-#cy-logo{
-	color: white;
-	font-size: 40px;
-	padding-top: 40px;
-	padding-right: 20px;
+#c-right {
+  width: 2.8rem;
+  height: 3rem;
+  margin-bottom: 10px;
 }
-#cy-matter{
-	color: white;
-	font-family: sans-serif;
-	font-weight: normal;
-	font-size: 18px;
+
+#cy-logo {
+  color: white;
+  font-size: 40px;
+  padding: 5px;
+}
+#cy-matter {
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+}
+.footer-btn {
+  color: black;
+  background-color: white;
+  font-weight: normal;
+  padding: 0.7rem;
+  font-size: 18px;
+}
+
+@media (max-width: 425px) {
+  footer {
+    height: auto;
+  }
+  #cy-logo {
+    font-size: 14px;
+  }
+  #cy-matter {
+    font-size: 10px;
+  }
+  .footer-btn {
+    font-size: 10px;
+    padding: 0.5rem;
+  }
+  #c-right {
+    width: 0.9rem;
+    height: 1rem;
+    margin-bottom: 3px;
+  }
+  .icon-box {
+    width: 8%;
+    height: 14vh;
+    background-color: orange;
+    float: right;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .footer-logo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .cright {
+    font-size: 7px;
+  }
 }
 
 /* scroll button - It is use to scroll up and down fastly.*/
 
-.scrollup{
-	width: 50px;
-	height: 50px;
-	position: fixed;
-	bottom: 25px;
-	right: 25px;
-	padding: 10px 15px;
-	background-color: #293646;
-	color: #fff;
-	border-radius: 10px;
-	border: 1px solid #fff;
-	transition: all 0.5s ease 0s;
-	cursor: pointer;
+.scrollup {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 10px 15px;
+  background-color: #293646;
+  color: #fff;
+  border-radius: 10px;
+  border: 0.1px solid black;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  opacity: 0.4;
 }
 
-#arrow{
-	font-size: 25px;
-	padding-right: 10px;
+#arrow {
+  font-size: 25px;
+  padding-right: 10px;
 }
-#arrow:active{
-	transform: scale(0.96);
-	color: #ccc;
+#arrow:active {
+  transform: scale(0.96);
+  color: #ccc;
 }
-
-
-
-
-
 
 /*----------------------------------Contact-Us-----------------------------*/
 
-.review-box{
-	width: 100%;
-	height: 90vh;
-	background: linear-gradient(135deg, #153677, rgb(129, 65, 65), black, rgb(9, 110, 92),  #4e085f);
-	display: flex;
-	align-items: center;
+.review-box {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(
+    135deg,
+    #153677,
+    rgb(129, 65, 65),
+    black,
+    rgb(9, 110, 92),
+    #4e085f
+  );
+  display: flex;
+  align-items: center;
 }
-.review-container{
-	width: 65%;
-	height: 85vh;
-	padding: 20px;
-	background-color: rgba(255, 255, 255, 0.4);
-	border-radius: 20px;
-	margin: 0px auto;
+.review-container {
+  width: 65%;
+  height: 85vh;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  margin: 0px auto;
 }
-#name{
-	font-size: 50px;
-	font-family: 'Poppins', sans-serif;
-	padding-bottom: 30px;
-	color: white;
+#name {
+  font-size: 50px;
+  padding-bottom: 30px;
+  color: white;
 }
-#form{
-	color: rgb(41, 54, 70);
+#form {
+  color: rgb(41, 54, 70);
 }
-#sub-name{
-	color: white;
-	font-weight: none;
-	font-family: 'Poppins', sans-serif;
+#sub-name {
+  color: white;
+  font-weight: none;
 }
-input:focus{
-	outline: none;
+input:focus {
+  outline: none;
 }
-.review-line{
-	width: 70%;
-	height: 4vh;
-	border-radius: 5px;	
-	padding: 15px;
-	margin: 10px;
-	color: black;
-	font-size: 20px;
-	border: none;
+.review-line {
+  width: 70%;
+  height: 4vh;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  color: black;
+  font-size: 20px;
+  border: none;
 }
-.review-message{
-	width: 70%;
-	height: 30vh;
-	border-radius: 5px;
-	padding: 15px;
-	margin: 10px;
-	color: black;
-	font-family: 'Poppins', sans-serif;
-	font-size: 20px;
-	border: none;
-	outline: none;
+.review-message {
+  width: 70%;
+  height: 30vh;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  color: black;
+  font-size: 20px;
+  border: none;
+  outline: none;
 }
-.submit-btn{
-	width: 90px;
-	height: 30px;
-	border-radius: 5px;
-	font-family: 'Poppins', sans-serif;
-	font-size: 20px;
-	background-color: white;
-	padding: 5px;
-	border: none;
-	float: right;
-	margin-top: 15px;
-	margin-right: 130px;
-	color: rgb(41, 54, 70);
-	cursor: pointer;
+.submit-btn {
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: white;
+  padding: 5px;
+  border: none;
+  float: right;
+  margin-top: 15px;
+  margin-right: 130px;
+  color: rgb(41, 54, 70);
+  cursor: pointer;
 }
-.submit-btn:hover{
-	background-color: tomato;
-	color: white;
+.submit-btn:hover {
+  background-color: tomato;
+  color: white;
 }
-.submit-btn:active{
-	transform: scale(0.96);
-	background-color: greenyellow;
+.submit-btn:active {
+  transform: scale(0.96);
+  background-color: greenyellow;
 }
-
 
 /* ---------------------------------------About-Us----------------------------*/
-.about-box{
-	width: 100%;
-	height: 230vh;
-	background: linear-gradient(135deg, #153677, rgb(129, 65, 65), black, rgb(9, 110, 92),  #4e085f);
-	display: flex;
-	align-items: center;
+.about-box {
+  width: 100%;
+  height: 230vh;
+  background: linear-gradient(
+    135deg,
+    #153677,
+    rgb(129, 65, 65),
+    black,
+    rgb(9, 110, 92),
+    #4e085f
+  );
+  display: flex;
+  align-items: center;
 }
-.about-container{
-	width: 90%;
-	height: 230vh;
-	margin: 0px auto;
-	padding: 20px;
+.about-container {
+  width: 90%;
+  height: 230vh;
+  margin: 0px auto;
+  padding: 20px;
 }
-#heading{
-	color: white;
-	font-family: 'Poppins', sans-serif;
-	font-size: 40px;
-	padding: 10px;
+#heading {
+  color: white;
+  font-size: 40px;
+  padding: 10px;
 }
-#headings{
-	color: white;
-	font-family: 'Poppins', sans-serif;
-	font-size: 40px;
-	padding: 10px;
-	font-weight: normal;
+#headings {
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+  font-weight: normal;
 }
-#cnt{
-	color: #ccc;
-	font-size: 18px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: normal;
+#cnt {
+  color: #ccc;
+  font-size: 18px;
+  font-weight: normal;
 }
-#cnts{
-	color: white;
-	font-size: 18px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: normal;
-	padding: 15px;
+#cnts {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 15px;
 }
-i{
-	font-size: 15px;
-	color: #ccc;
+i {
+  font-size: 15px;
+  color: #ccc;
 }
-#team{
-	color: aquamarine;
+#team {
+  color: aquamarine;
 }
-
