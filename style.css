@@ -111,7 +111,7 @@ video {
   padding: 2rem 4rem 0 4rem;
   color: whitesmoke;
 }
-@media (max-width: 300px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 768px) {
   .documentation {
     height: auto;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
