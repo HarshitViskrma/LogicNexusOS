@@ -66,7 +66,7 @@ video {
 }
 
 /* Mobile style */
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   #headinges {
     font-size: 1.9rem;
   }
@@ -111,7 +111,7 @@ video {
   padding: 2rem 4rem 0 4rem;
   color: whitesmoke;
 }
-@media (max-width: 425px) {
+@media (max-width: 425px) and (max-width: 425px) {
   .documentation {
     height: auto;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -136,7 +136,7 @@ video {
   color: white;
   font-size: 5rem;
 }
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .box-bg {
     width: auto;
     height: auto;
@@ -210,7 +210,7 @@ video {
   height: 100%;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .sys-require {
     height: auto;
   }
@@ -308,7 +308,7 @@ video {
   margin: 1.5rem;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .contain-img {
     width: 100%;
     height: auto;
@@ -401,7 +401,7 @@ input:focus {
   background-color: orange;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .enq-form {
     height: auto;
   }
@@ -490,7 +490,7 @@ footer {
   font-size: 18px;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   footer {
     height: auto;
   }
